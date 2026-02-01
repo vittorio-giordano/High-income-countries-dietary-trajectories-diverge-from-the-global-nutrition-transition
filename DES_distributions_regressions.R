@@ -13,10 +13,11 @@ food_item_15=food_categories[1:15,1]
 GDP=as.matrix(read.csv("GDP_standard_2015_prices_capita.csv", header = TRUE, sep = ";")) # GDP data
 
 # DES shares time series for every country and 4 food categories
-nc <- nc_open("DES_data.nc") #switch to "DES_data_15.nc" for 15 food items
-DES_share <- ncvar_get(nc, "DES")
+nc <- nc_open("DES_data_share_4.nc") #switch to "_15" for 15 food items, "_total_" for total calories
+DES_share <- ncvar_get(nc, "DES_share_4") #or "_15", "DES_4" for totals
 dim(DES_share) # [1] 196  61   4 - countries x years x categories
 nc_close(nc)
+
 DES_share <- DES_share[, 10:dim(DES_share)[2], ] #start from 1970, as GDP data
 
 All <- matrix(0, nrow = 196*52, ncol = 2) #collect every country DES, for performing regressions
