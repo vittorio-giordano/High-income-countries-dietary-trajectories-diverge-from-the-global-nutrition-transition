@@ -1,5 +1,5 @@
 # High-income countries dietary trajectories diverge from the global nutrition transition
-This repository contains the code and the data used to perform the analyses of the work *Giordano, V., Tuninetti, M., Laio, F., (2025). High-income countries dietary trajectories diverge from the global nutrition transition*, which analyzes historical data of dietary composition to investigate transitions in the global food system.
+This repository contains the code and the data used to perform the analyses of the work: *Giordano, V., Tuninetti, M., Laio, F., (2026). High-income countries dietary trajectories diverge from the global nutrition transition. DOI 10.1088/2976-601X/ae3ded*, which analyzes historical data of dietary composition to investigate transitions in the global food system.
 
 ## Table of Contents
 - [Data Overview](#data-overview)
